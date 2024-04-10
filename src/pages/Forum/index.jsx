@@ -17,7 +17,7 @@ const Forum = () => {
 
   useEffect(() => {
     setLoading(true);
-    fetch('http://localhost:5000/forums')
+    fetch('https://alumni-backend-chi.vercel.app/forums')
       .then((response) => response.json())
       .then((data) => {
 

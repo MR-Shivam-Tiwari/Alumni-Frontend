@@ -20,7 +20,7 @@ const MyGroups = () => {
   //   }
   //   try {
   //     const response = await axios.get(
-  //       `http://localhost:5000/groups?page=${page}&size=${LIMIT}`
+  //       `https://alumni-backend-chi.vercel.app/groups?page=${page}&size=${LIMIT}`
   //     );
   //     const postsData = response.data.records;
   //     setGroups((prevItems) => [...prevItems, ...postsData]);
@@ -41,7 +41,7 @@ const MyGroups = () => {
     }
     try {
       const response = await axios.get(
-        `http://localhost:5000/groups/user/${profile._id}`
+        `https://alumni-backend-chi.vercel.app/groups/user/${profile._id}`
       );
       const postsData = response.data.groups;
       setGroups(postsData);

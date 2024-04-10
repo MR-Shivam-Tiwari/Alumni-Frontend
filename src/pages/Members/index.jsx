@@ -80,7 +80,7 @@ const Members = ({ addButton, groupMembers, owner, deleteButton }) => {
     console.log('handling delete')
     try {
       const token = cookie.token; 
-      const response = await axios.delete(`http://localhost:5000/alumni/${memberId}`, {
+      const response = await axios.delete(`https://alumni-backend-chi.vercel.app/alumni/${memberId}`, {
         headers: {
           Authorization: `Bearer ${token}`
         }

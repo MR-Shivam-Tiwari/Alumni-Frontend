@@ -25,7 +25,7 @@ const JobIntDisplay = ({ picture, jobId, jobTitle, location, salaryMin, salaryMa
     // };
     // const profile = useSelector((state) => state.profile);
     // const fetchDonationPost = async () => {
-    //     const response = await axios.get(`http://localhost:5000/${title}/${_id}`)
+    //     const response = await axios.get(`https://alumni-backend-chi.vercel.app/${title}/${_id}`)
     //     const data = response.data;
     //     setJobs(data);
     //     setLoading(false)

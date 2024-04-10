@@ -21,7 +21,7 @@ export const Followers = () => {
   const fetchMembers = async (page) => {
     try {
       console.log('page', page);
-      const response = await fetch(`http://localhost:5000/alumni/${id}/followers?page=${page}&size=${LIMIT}`);
+      const response = await fetch(`https://alumni-backend-chi.vercel.app/alumni/${id}/followers?page=${page}&size=${LIMIT}`);
       if (response.ok) {
         const data = await response.json();
         setTotalFollowers(data.totalFollowers);

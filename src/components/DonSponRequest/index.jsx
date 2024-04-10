@@ -138,7 +138,7 @@ const DonSponRequest = ({ name, edit }) => {
             }
             try {
                 console.log('formData member', formData)
-                const response = await axios.post('http://localhost:5000/alumni/register', formData);
+                const response = await axios.post('https://alumni-backend-chi.vercel.app/alumni/register', formData);
                 console.log('Registration successful!', response.data);
                 toast.success("User Registered successfully!");
                 setLoading(false);
@@ -155,7 +155,7 @@ const DonSponRequest = ({ name, edit }) => {
         if (!edit) {
             console.log('body', body)
             // try {
-            //     const response = await axios.post(`http://localhost:5000/${name}s/create`,
+            //     const response = await axios.post(`https://alumni-backend-chi.vercel.app/${name}s/create`,
             //         body,
             //         {
             //             "Content-Type": "application/json"
@@ -179,7 +179,7 @@ const DonSponRequest = ({ name, edit }) => {
         }
         else {
             try {
-                const response = await axios.put(`http://localhost:5000/${name}s/${_id}`,
+                const response = await axios.put(`https://alumni-backend-chi.vercel.app/${name}s/${_id}`,
                     body,
                     {
                         "Content-Type": "application/json"

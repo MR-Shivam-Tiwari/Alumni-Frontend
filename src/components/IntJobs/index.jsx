@@ -181,7 +181,7 @@ const IntJobs = (props) => {
                     }
                 }
                 console.log('formData', formDataToSend)
-                const response = await fetch('http://localhost:5000/jobs/create', {
+                const response = await fetch('https://alumni-backend-chi.vercel.app/jobs/create', {
                     method: 'POST',
                     body: formDataToSend,
                 });

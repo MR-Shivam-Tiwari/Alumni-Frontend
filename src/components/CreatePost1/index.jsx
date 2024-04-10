@@ -107,7 +107,7 @@ const CreatePost1 = ({ name, onNewPost,entityType }) => {
 
       try {
         const response = await axios.post(
-          `http://localhost:5000/${entityType}/create`,
+          `https://alumni-backend-chi.vercel.app/${entityType}/create`,
           formDataObject,
 
         );
@@ -126,7 +126,7 @@ const CreatePost1 = ({ name, onNewPost,entityType }) => {
     try {
       console.log("request body", formDataObject);
       const response = await axios.post(
-        `http://localhost:5000/${entityType}/create?folder=${folderName}`,
+        `https://alumni-backend-chi.vercel.app/${entityType}/create?folder=${folderName}`,
         formDataObject,
         {
           headers: {
@@ -150,7 +150,7 @@ const CreatePost1 = ({ name, onNewPost,entityType }) => {
     try {
       console.log("request body", formDataObject);
       const response = await axios.post(
-        `http://localhost:5000/${entityType}/create`,
+        `https://alumni-backend-chi.vercel.app/${entityType}/create`,
         formDataObject,
 
       );

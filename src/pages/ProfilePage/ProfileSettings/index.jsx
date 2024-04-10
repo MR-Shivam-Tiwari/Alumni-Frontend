@@ -28,7 +28,7 @@ export const ProfileSettings = () => {
   // useEffect(() => {
   //   const fetchUserData = async () => {
   //     try {
-  //       const response = await fetch(`http://localhost:5000/alumni/${profile._id}`, {
+  //       const response = await fetch(`https://alumni-backend-chi.vercel.app/alumni/${profile._id}`, {
   //         method: 'GET',
   //         headers: {
   //           'Content-Type': 'application/json',
@@ -144,7 +144,7 @@ export const ProfileSettings = () => {
     const userID = profile._id;
 
     try {
-      const response = await fetch(`http://localhost:5000/alumni/${userID}`, {
+      const response = await fetch(`https://alumni-backend-chi.vercel.app/alumni/${userID}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

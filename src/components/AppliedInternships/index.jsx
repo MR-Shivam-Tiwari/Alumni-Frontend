@@ -11,7 +11,7 @@ export const AppliedInternships = ({searchQuery}) => {
     useEffect(() => {
         const fetchAppliedInternships = async () => {
             try {
-                const response = await axios.get(`http://localhost:5000/internships/${profile._id}/appliedJobs`);
+                const response = await axios.get(`https://alumni-backend-chi.vercel.app/internships/${profile._id}/appliedJobs`);
                 setAppliedInternships(response.data);
                 setLoading(false);
             } catch (error) {

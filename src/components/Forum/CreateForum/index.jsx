@@ -36,7 +36,7 @@ const CreateForum = () => {
         department: profile.department
       };
 
-      const response = await axios.post('http://localhost:5000/forums/createForum', body);
+      const response = await axios.post('https://alumni-backend-chi.vercel.app/forums/createForum', body);
 
       console.log('Forum created:', response.data);
       toast.success("New Forum Created");

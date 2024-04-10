@@ -46,7 +46,7 @@ const Chat = () => {
 
   const fetchBlockedByUsers = async () => {
     try {
-      const response = await fetch(`http://localhost:5000/alumni/${profile._id}/blockedByUsers`);
+      const response = await fetch(`https://alumni-backend-chi.vercel.app/alumni/${profile._id}/blockedByUsers`);
       if (!response.ok) {
         throw new Error('Failed to fetch blocked by users');
       }
@@ -59,7 +59,7 @@ const Chat = () => {
   };
   const fetchBlockedUsers = async () => {
     try {
-      const response = await fetch(`http://localhost:5000/alumni/${profile._id}/blockedUsers`);
+      const response = await fetch(`https://alumni-backend-chi.vercel.app/alumni/${profile._id}/blockedUsers`);
       if (!response.ok) {
         throw new Error('Failed to fetch blocked by users');
       }
@@ -133,7 +133,7 @@ const Chat = () => {
     
     if(file){
       console.log('file',file)
-      axios.get(`http://localhost:5000/messages/${selectedUserId}`, {
+      axios.get(`https://alumni-backend-chi.vercel.app/messages/${selectedUserId}`, {
         headers: {
           Authorization: `Bearer ${cookie.token}`,
         },
@@ -197,7 +197,7 @@ const Chat = () => {
   }, [messages])
 
   useEffect(() => {
-    axios.get('http://localhost:5000/alumni/all/allAlumni', {
+    axios.get('https://alumni-backend-chi.vercel.app/alumni/all/allAlumni', {
       headers: {
         Authorization: `Bearer ${cookie.token}`,
       },
@@ -219,7 +219,7 @@ const Chat = () => {
     console.log('selected user id in useEffect',selectedUserId)
     if (selectedUserId) {
 
-      axios.get(`http://localhost:5000/messages/${selectedUserId}`, {
+      axios.get(`https://alumni-backend-chi.vercel.app/messages/${selectedUserId}`, {
         headers: {
           Authorization: `Bearer ${cookie.token}`,
         },
@@ -294,7 +294,7 @@ const Chat = () => {
                       {message.file && (
                         <div style={{fontSize: '14px',display: 'flex', alignItems: 'center'}}>
                           <AiOutlinePaperClip/>
-                          <a href={`http://localhost:5000/uploads/${message.file}`} target="_blank" rel="noopener noreferrer">{message.file}</a>
+                          <a href={`https://alumni-backend-chi.vercel.app/uploads/${message.file}`} target="_blank" rel="noopener noreferrer">{message.file}</a>
                       </div>
                       )
                       }

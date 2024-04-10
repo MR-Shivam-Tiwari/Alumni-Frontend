@@ -86,7 +86,7 @@ function Feed({ photoUrl, username, showCreatePost, entityId, entityType, showDe
 
   const handleLikes = async (entityId) => {
     try {
-      const response = await axios.get(`http://localhost:5000/${entityType}/${entityId}`);
+      const response = await axios.get(`https://alumni-backend-chi.vercel.app/${entityType}/${entityId}`);
       const updatedPost = response.data;
 
 
@@ -112,7 +112,7 @@ function Feed({ photoUrl, username, showCreatePost, entityId, entityType, showDe
 
   const refreshComments = async (postId) => {
     try {
-      const response = await axios.get(`http://localhost:5000/${entityType}/${postId}`);
+      const response = await axios.get(`https://alumni-backend-chi.vercel.app/${entityType}/${postId}`);
       const updatedPost = response.data;
       setPosts((prevPosts) => {
         return prevPosts.map((post) => {
@@ -133,7 +133,7 @@ function Feed({ photoUrl, username, showCreatePost, entityId, entityType, showDe
     console.log("Getting posts/news")
     try {
       const response = await axios.get(
-        `http://localhost:5000/${entityType}?page=${page}&size=${LIMIT}`
+        `https://alumni-backend-chi.vercel.app/${entityType}?page=${page}&size=${LIMIT}`
       );
       const postsData = response.data.records;
       setPosts((prevItems) => [...prevItems, ...postsData]);

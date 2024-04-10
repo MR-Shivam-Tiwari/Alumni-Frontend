@@ -77,7 +77,7 @@ const Settings = () => {
             };
 
             const response = await axios.post(
-                "http://localhost:5000/settings/createSetting",
+                "https://alumni-backend-chi.vercel.app/settings/createSetting",
                 body,
                 { headers }
             );

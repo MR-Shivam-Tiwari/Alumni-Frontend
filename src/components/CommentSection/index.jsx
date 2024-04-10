@@ -17,7 +17,7 @@ const CommentSection = ({ comments, entityId, entityType, onCommentSubmit, onDel
 
   const handleCommentSubmit = async () => {
     try {
-      const response = await axios.post(`http://localhost:5000/${entityType}/${entityId}/comments`, {
+      const response = await axios.post(`https://alumni-backend-chi.vercel.app/${entityType}/${entityId}/comments`, {
         userId: profile._id,
         content: content,
         userName: profile.firstName,
@@ -33,7 +33,7 @@ const CommentSection = ({ comments, entityId, entityType, onCommentSubmit, onDel
 
   const handleCommentDelete = async (commentId) => {
     try {
-      const response= await axios.delete(`http://localhost:5000/${entityType}/${entityId}/comments/${commentId}`);
+      const response= await axios.delete(`https://alumni-backend-chi.vercel.app/${entityType}/${entityId}/comments/${commentId}`);
       const postId = response.data._id;
       onDeleteComment(postId); // Trigger a callback to refresh comments
     } catch (error) {
@@ -83,7 +83,7 @@ const CommentSection = ({ comments, entityId, entityType, onCommentSubmit, onDel
 
   const handleReplySubmit = async (parentCommentId) => {
     try {
-      const response=await axios.post(`http://localhost:5000/${entityType}/${entityId}/comments`, {
+      const response=await axios.post(`https://alumni-backend-chi.vercel.app/${entityType}/${entityId}/comments`, {
         content: reply,
         userName: profile.firstName,
         parentCommentId: parentCommentId,

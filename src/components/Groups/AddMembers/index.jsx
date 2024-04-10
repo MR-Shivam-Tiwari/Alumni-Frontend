@@ -14,7 +14,7 @@ export const AddMembers = ({type}) => {
   useEffect(() => {
     const fetchMembers = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/groups/${_id}/members`);
+        const response = await fetch(`https://alumni-backend-chi.vercel.app/groups/${_id}/members`);
         const data = await response.json();
         if (response.ok) {
           setMembers(data.members);
@@ -29,7 +29,7 @@ export const AddMembers = ({type}) => {
     const fetchForumMembers = async () => {
       console.log('Fetching forum members')
       try {
-        const response = await fetch(`http://localhost:5000/forums/${id}/members`);
+        const response = await fetch(`https://alumni-backend-chi.vercel.app/forums/${id}/members`);
         const data = await response.json();
         if (response.ok) {
           setMembers(data.members);

@@ -115,7 +115,7 @@ const JobsInt = ({modalShow: propModalShow,onHideModal,popover }) => {
     
         const handlePublish = async () => {
           try {
-            const response = await fetch(`http://localhost:5000/${title}/create`, {
+            const response = await fetch(`https://alumni-backend-chi.vercel.app/${title}/create`, {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',

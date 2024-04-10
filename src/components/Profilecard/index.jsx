@@ -46,7 +46,7 @@ const Profilecard = ({ member, name, addButton, groupMembers, owner, deleteButto
     const checkFollowingStatus = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:5000/alumni/${profile._id}/following/all`
+          `https://alumni-backend-chi.vercel.app/alumni/${profile._id}/following/all`
         );
         const followingDetails = response.data.followingDetails;
         const isUserFollowing = followingDetails.some(
@@ -66,13 +66,13 @@ const Profilecard = ({ member, name, addButton, groupMembers, owner, deleteButto
     setLoading(true);
     try {
       if (!isFollowing) {
-        await axios.patch(`http://localhost:5000/alumni/${member._id}/follow`, {
+        await axios.patch(`https://alumni-backend-chi.vercel.app/alumni/${member._id}/follow`, {
           userId: profile._id,
         });
         setIsFollowing(true);
         setLoading(false);
       } else {
-        await axios.patch(`http://localhost:5000/alumni/${member._id}/follow`, {
+        await axios.patch(`https://alumni-backend-chi.vercel.app/alumni/${member._id}/follow`, {
           userId: profile._id,
         });
         setIsFollowing(false);
@@ -89,7 +89,7 @@ const Profilecard = ({ member, name, addButton, groupMembers, owner, deleteButto
     setLoading(true)
     try {
       const response = await axios.put(
-        `http://localhost:5000/${isGroupURL ? `groups/members/${groupId}` : isForumURL ? `forums/members/${groupId}` : ''}`,
+        `https://alumni-backend-chi.vercel.app/${isGroupURL ? `groups/members/${groupId}` : isForumURL ? `forums/members/${groupId}` : ''}`,
         {
           userId: memberId,
         }

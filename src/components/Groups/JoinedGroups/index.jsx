@@ -22,7 +22,7 @@ const JoinedGroups = () => {
     }
     try {
       const response = await axios.get(
-        `http://localhost:5000/groups/joined?page=${page}&size=${LIMIT}&userId=${id}`
+        `https://alumni-backend-chi.vercel.app/groups/joined?page=${page}&size=${LIMIT}&userId=${id}`
       );
       const postsData = response.data.records;
       setGroups((prevItems) => [...prevItems, ...postsData]);

@@ -23,7 +23,7 @@ export const SearchedResults = () => {
     const fetchSearchResults = async () => {
       setLoading(true);
       try {
-        const response = await fetch(`http://localhost:5000/search/search?keyword=${searchKeyword}`);
+        const response = await fetch(`https://alumni-backend-chi.vercel.app/search/search?keyword=${searchKeyword}`);
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }

@@ -37,7 +37,7 @@ const Jobs = () => {
 
     const getData = async () => {
         try {
-            const response = await axios.get(`http://localhost:5000/jobs`);
+            const response = await axios.get(`https://alumni-backend-chi.vercel.app/jobs`);
 
             const filteredJobs = response.data.filter(job => !job.archive && job.approved);
             const filteredArchivedJobs = response.data.filter(job => job.archive && job.approved && job.userId === profile._id);

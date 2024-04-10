@@ -21,7 +21,7 @@ const SuggestedGroups = () => {
         }
         try {
             const response = await axios.get(
-                `http://localhost:5000/groups?page=${page}&size=${LIMIT}&userId=${profile._id}`
+                `https://alumni-backend-chi.vercel.app/groups?page=${page}&size=${LIMIT}&userId=${profile._id}`
             );
             const postsData = response.data.records;
             setGroups((prevItems) => [...prevItems, ...postsData]);

@@ -12,7 +12,7 @@ export const AppliedJobs = ({searchQuery}) => {
     useEffect(() => {
         const fetchAppliedJobs = async () => {
             try {
-                const response = await axios.get(`http://localhost:5000/jobs/${profile._id}/appliedJobs`);
+                const response = await axios.get(`https://alumni-backend-chi.vercel.app/jobs/${profile._id}/appliedJobs`);
                 setAppliedJobs(response.data);
                 setLoading(false);
             } catch (error) {

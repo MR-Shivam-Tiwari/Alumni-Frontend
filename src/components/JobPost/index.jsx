@@ -35,7 +35,7 @@ const JobPost = ({ userId, id, jobTitle, title, titleS, description, salaryMin, 
     function MyVerticallyCenteredModal(props) {
         const handleArchive = async () => {
             try {
-                const response = await fetch(`http://localhost:5000/${type}/${id}`, {
+                const response = await fetch(`https://alumni-backend-chi.vercel.app/${type}/${id}`, {
                     method: 'PUT',
                     headers: {
                         'Content-Type': 'application/json',
@@ -105,7 +105,7 @@ const JobPost = ({ userId, id, jobTitle, title, titleS, description, salaryMin, 
         setDeleteModalShow(false)
         try {
             console.log('id', id)
-            const response = await fetch(`http://localhost:5000/${title}/${id}`, {
+            const response = await fetch(`https://alumni-backend-chi.vercel.app/${title}/${id}`, {
                 method: 'DELETE',
                 headers: {
                     'Content-Type': 'application/json',
@@ -133,7 +133,7 @@ const JobPost = ({ userId, id, jobTitle, title, titleS, description, salaryMin, 
                         return (
                             <img
                                 key={index}
-                                src={`http://localhost:5000/uploads/${attachment}`}
+                                src={`https://alumni-backend-chi.vercel.app/uploads/${attachment}`}
                                 alt=""
                                 className="src"
                             />

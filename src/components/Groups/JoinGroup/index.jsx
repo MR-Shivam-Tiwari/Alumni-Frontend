@@ -19,7 +19,7 @@ export const JoinGroup = () => {
 
   const getAllGroupMembers = async () => {
     try {
-      const response = await axios.get(`http://localhost:5000/groups/${_id}/members`);
+      const response = await axios.get(`https://alumni-backend-chi.vercel.app/groups/${_id}/members`);
       if (response.status === 200) {
         setGroupMembersId(response.data.members);
       }
@@ -40,7 +40,7 @@ export const JoinGroup = () => {
 
   const handleAddMember = async () => {
     try {
-      const response = await axios.put(`http://localhost:5000/groups/members/${_id}`, {
+      const response = await axios.put(`https://alumni-backend-chi.vercel.app/groups/members/${_id}`, {
         userId: profile._id,
       });
 

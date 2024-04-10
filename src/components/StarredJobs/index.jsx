@@ -12,7 +12,7 @@ export const StarredJobs = ({searchQuery}) => {
     useEffect(() => {
         const fetchStarredJobs = async () => {
             try {
-                const response = await axios.get(`http://localhost:5000/jobs/starred/${profile._id}`);
+                const response = await axios.get(`https://alumni-backend-chi.vercel.app/jobs/starred/${profile._id}`);
                 const nonArchivedStarredJobs = response.data.jobs.filter(job => !job.archive);
                 setStarredJobs(nonArchivedStarredJobs);
                 setLoading(false);
