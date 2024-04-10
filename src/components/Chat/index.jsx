@@ -107,7 +107,7 @@ const Chat = () => {
     console.log("Connecting to WS")
     if (ws === null || !ws || ws) {
       console.log("Connecting..")
-      const ws = new WebSocket('ws://alumni-backend-chi.vercel.app/');
+      const ws = new WebSocket('wss://alumni-backend-chi.vercel.app/');
       ws.addEventListener('message', handleMessage);
       setWs(ws);
 
