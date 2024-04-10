@@ -1,0 +1,90 @@
+.main{
+    display: flex;
+    flex-direction: row;
+}
+.main .left{
+    width: 50%;
+}
+.main .left .content{
+   margin: 0em 14em;
+   height: 100%;
+}
+.main .right{
+    width: 50%;
+}
+.form-fields{
+    position: relative;
+    margin: 20px 0;
+}
+.form-fields lable{
+    font-weight: 500;
+    font-size: 16px;
+    display: block;
+    opacity: 0.8;
+}
+.form-fields input{
+height: 52px;
+}
+.form-fields input{
+    background-color: transparent;
+    box-shadow: rgba(60, 66, 87, 0.16) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.12) 0px 1px 1px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+    border-radius: 12px;
+    transition: background-color 240ms, box-shadow 240ms;
+    color: #393d4a;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    padding: 13px;
+    width: 100%;
+    border: 0;
+    
+}
+.form-fields select{
+    height: 52px;
+    }
+    .form-fields select{
+        background-color: transparent;
+        box-shadow: rgba(60, 66, 87, 0.16) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.12) 0px 1px 1px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+        border-radius: 12px;
+        transition: background-color 240ms, box-shadow 240ms;
+        color: #393d4a;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 28px;
+        padding: 13px;
+        width: 100%;
+        border: 0;
+    }
+    .button .login-btn button{
+        width: 100%;
+        line-height: 60px;
+        border-radius: 12px;
+        font-size: 20px;
+        background: #174873 !important;
+        color: #ffffff !important;
+        box-shadow: none;
+        border-color: #174873;
+    }
+    .button{
+        margin: 20px 0;
+        position: relative;
+    }
+    .button .login-btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+   }
+   .check{
+    display: flex;
+    gap: 12px;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+   }
+   .check label{
+    padding-left: 20px;
+    cursor: pointer;
+    user-select: none;
+    font-size: 16px;
+    opacity: 0.9;
+   }

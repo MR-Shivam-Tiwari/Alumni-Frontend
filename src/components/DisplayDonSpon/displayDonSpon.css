@@ -1,0 +1,134 @@
+.donSpon-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.donSpon-card {
+  width: 48%;
+  background-color: white;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  border-radius: max(0px, min(8px, calc((100vw - 4px - 100%) * 9999))) / 8px;
+  height: 60vh;
+  margin-bottom: 15px;
+}
+
+.donation-card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+
+.donation-card-title h2 {
+  font-size: 20px;
+  margin-bottom: 8px;
+  font-family: math;
+  color: darkslateblue;
+}
+
+.donation-card-description {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.donation-card-amount {
+  font-size: 18px;
+  color: #007bff;
+  margin-top: auto; /* Push the amount to the bottom of the card */
+}
+
+.donation-card-image {
+  width: 100%; /* Ensure the image doesn't exceed the card's width */
+  height: 60%; /* Ensure the image doesn't exceed the card's height */
+  overflow: hidden;
+  border-radius: inherit;
+}
+
+.donation-card-image img {
+  width: 100%;
+  height: 100%; /* Ensure the image fills the card's height */
+  object-fit: cover;
+  border-radius: inherit;
+}
+
+.donation-card-bar {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 18px;
+}
+
+.donation-amount,
+.donation-target {
+  display: inline-block;
+}
+
+.bar {
+  background-color: #ccc;
+  height: 10px;
+  border-radius: 10px;
+  position: relative;
+  margin: 10px 0;
+}
+
+#fill-bar {
+  background-color: #007bff;
+  height: 100%;
+  width: 0;
+  border-radius: 10px;
+  transition: width 0.5s;
+}
+
+.user-details img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: inline;
+}
+.user-details p {
+  display: inline;
+  margin-left: 10px;
+}
+.edit-delete-buttons {
+  background-color: #f8fafb;
+  height: 20%;
+  overflow: hidden;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 0px px 0px 6px 6px;
+}
+
+.edit-delete-buttons button{
+    background-color: rgb(76 175 80 / 20%);
+    color: #4caf50;
+    font-weight: 500;
+    margin: 2px 8px;
+    padding: 9px 16px;
+    border: 0;
+    display: inline-block;
+    font-size: 15px;
+    width: calc(50% - 18px);
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.5px;
+    border-radius: 8px;
+}
+
+.load-more-button{
+  background: #ffffff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    height: 36px;
+    line-height: 36px;
+    font-weight: 600;
+    font-family: "Lato", sans-serif;
+    border-radius: 2em;
+    padding: 0 20px !important;
+    position: relative;
+    transition: all 0.15s;
+    border: none;
+    font-size: 14px;
+}

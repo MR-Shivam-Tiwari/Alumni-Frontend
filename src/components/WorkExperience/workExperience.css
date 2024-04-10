@@ -1,0 +1,31 @@
+.work-experience-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .work-experience-title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  
+  .work-experience-company {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  
+  .work-experience-date {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 8px;
+  }
+  
+  .work-experience-location {
+    font-size: 14px;
+    color: #666;
+  }
+  

@@ -1,0 +1,49 @@
+.forum{
+    width: 60%;
+    height: 100%;
+}
+.forum div input{
+    margin-right: 20px;
+    padding: 5px 24px 5px 45px;
+    border-radius: 25px;
+    font-size: 20px;
+    border:none;
+}
+#tb{
+    width: 96%;
+    padding: 20px;
+    border: none;
+    text-align: left;
+    border: solid rgb(195, 191, 191);
+    border-radius: 10px;
+}
+#tb th{
+ font-size: 16px;
+ font-weight: 600;
+ background-color: #174873;
+ border: none;
+ height: 6vh;
+ color: white;
+ padding: 0px 50px;
+ text-align: center;
+} 
+#tb td{
+    border: none;
+    height: 14vh;
+    padding: 0px 50px; 
+    border-bottom:1px solid rgb(195, 191, 191);
+    text-align: center;
+}
+.forum button{
+    border-radius: 50px;
+    background-color: #174873;
+    color: white;
+    padding: 10px 20px;
+    font-weight: 600;
+    border: none;
+} 
+.forum button:hover{
+background-color:azure;
+color:#174873;
+font-weight: 600;
+}

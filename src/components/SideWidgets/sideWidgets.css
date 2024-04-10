@@ -1,0 +1,167 @@
+  .sideWidget-feed{
+    width: 35%;
+;
+  } 
+  
+  .sideWidget-post-card {
+    width: 100%;
+    max-width: 25vw; /* Adjust the maximum width as needed */
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    height: 40vh;
+    display: flex;
+    max-height: 105vh;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .sideWidget-post-header {
+    height: 40%;
+    width: 100%;
+  }
+  
+  .sideWidget-post-header img {
+    height: 100%;
+    border-radius: 8px 8px 0px 0px;
+  }
+  
+  .sideWidget-post-media {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .sideWidget2-feed{
+    width: 20vw;
+    margin-left: 20px;
+;
+  } 
+  
+  .sideWidget2-post-card {
+    width: 100%;
+    max-width: 25vw; /* Adjust the maximum width as needed */
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 19px;
+    height: 30vh;
+    display: flex;
+    max-height: 105vh;
+    flex-direction: column;
+  }
+  
+  .sideWidget2-post-header {
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .sideWidget2-post-header img {
+    height: 100%;
+    border-radius: 8px 8px 0px 0px;
+  }
+  
+  .sideWidget2-post-media {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .online{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 25vw;
+    background-color: rgb(0 192 194 / 30%);
+    border: 1px solid #e0e0e0;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 19px;
+    height:10vh;
+  }
+  .online p{
+    background: -webkit-linear-gradient(45deg, #1f75ff, #00a282 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 10px 0 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 15px;
+    font-weight: bold;
+  }
+  
+  .invite{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 25vw;
+    background-color: #fff6df;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 19px;
+    height: 30vh;
+  }
+
+  .invite p{
+    display: block;
+    overflow: hidden;
+    padding: 0 15px;
+    line-height: 39px;
+    font-size: 14.5px;
+    color: #444;
+    font-weight: 600;
+    background: transparent !important;
+    color: #986600 !important;
+  }
+  .sideWidget-email{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .sideWidget-email input{
+    box-shadow: rgba(60, 66, 87, 0.16) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.12) 0px 1px 1px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+    border-radius: max(0px, min(8px, calc((100vw - 4px - 100%) * 9999))) / 8px;
+    transition: background-color 240ms, box-shadow 240ms;
+    color: #393d4a;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 8px;
+    width: 100%;
+    border: 0;
+    outline: 0;
+  }
+  
+  .sideWidget2-activities {
+    width: 100%;
+    max-width: 25vw;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 19px;
+    height: 15vh;
+    display: flex;
+    max-height: 105vh;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+  }
+
+  .sideWidget2-activities-post-header {
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }

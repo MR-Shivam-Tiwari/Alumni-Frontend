@@ -1,0 +1,41 @@
+.login-left{
+    width: 50%;
+    background: #174873;
+    color: white;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+.login-left p {
+    color: white;
+    margin-bottom: 0rem;
+}
+.login-left-welcome{
+    border: 16px solid rgb(255 255 255 / 64%);
+    border-radius: 40px 40px 40px 40px;
+    margin-top: 100px;
+    position: absolute;
+    /* bottom: 0; */
+}
+.login-left-welcome img{
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+}
+.login-remember-forgot{
+    display: flex;
+}
+
+.login-right{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+form div{
+    margin-top: 15px;
+}
+.login-remember-forgot{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}

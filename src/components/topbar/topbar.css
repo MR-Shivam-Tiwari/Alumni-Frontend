@@ -1,0 +1,122 @@
+.topBar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1.4fr 2.7fr 0.5fr; /* Define 3 columns with equal width */
+  gap: 10px; /* Adjust the gap between columns as needed */
+  align-items: center; /* Vertically center the items within the grid */
+  background-color: #1e2321; /* Background color for the entire topBar */
+  color: white;
+  width: 78%;
+  margin-right: 130px;
+}
+.top-bar {
+  background-color: #1e2321;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0px;
+  z-index: 3;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* .search {
+
+} */
+
+.search input {
+  width: 80%;
+  border-radius: 10px;
+  color: #ffffff !important;
+  background: #0f1110 !important;
+  padding-left: 15px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+.top button {
+  background-color: #174873;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border-radius: 8px;
+  padding: 3px 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.profile-list{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+}
+.profile-menu {
+  position: relative;
+}
+
+.profile-options {
+  position: absolute;
+  top: 50px; /* Adjust this value as needed */
+  right: 0;
+  background-color: #ffffff;
+  list-style: none;
+  padding: 0;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  color: black;
+  width: 13vw;
+}
+
+.profile-options li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.profile-options li:hover {
+  background-color: #174873;
+  color: white;
+}
+
+.notifications-card {
+  position: absolute;
+  top: 50px; /* Adjust this value as needed */
+  right: 0;
+  background-color: #174873;
+  list-style: none;
+  padding: 0;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  color: whitesmoke;
+  width: 25vw;
+  min-height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.messages-card {
+  position: absolute;
+  top: 50px; /* Adjust this value as needed */
+  right: 0;
+  background-color: #ffffff;
+  list-style: none;
+  padding: 0;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  color: black;
+  width: 13vw;
+  min-height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

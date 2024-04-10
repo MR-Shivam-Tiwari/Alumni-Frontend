@@ -1,0 +1,165 @@
+.ijp-card-container{
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
+}
+.ijp-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 16px;
+    background-color: #fff;
+     /* Adjust the width as needed */
+    max-width: 600px; /* Set a maximum width if desired */
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    width: 100%;
+}
+.ijp-image{
+    height: 70%;
+    overflow: hidden;
+  
+}
+.ijp-image img {
+    max-width: 100%; /* Ensure the image fits within the card */
+    height: auto; /* Maintain image aspect ratio */
+}
+
+.ijp-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px; /* Adjust as needed */
+    display: flex;
+    align-items: center;
+}
+.ijp-title p{
+    margin-bottom: 0;
+}
+.ijp-share{
+    margin-left: auto;
+    border: 1px solid;
+    padding: 5px;
+    border-radius: 7px;
+    font-size: 18px;
+    position: relative;
+}
+
+.ijp-description {
+    font-size: 16px;
+    margin-bottom: 10px; /* Adjust as needed */
+}
+
+.ijp-user-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 14px;
+    margin-top: 5px; /* Adjust as needed */
+}
+
+.ijp-user-details 	p:nth-child(1){
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+.ijp-user-details img {
+    width: 30px; /* Adjust the profile image size */
+    height: 30px; /* Adjust the profile image size */
+    border-radius: 50%; /* Make it round */
+    margin-right: 10px; /* Adjust the spacing */
+}
+
+.ijp-donation-card-bar {
+    margin-top: 20px; /* Adjust the spacing */
+}
+
+.ijp-donation-amount,
+.ijp-donation-target {
+    font-size: 15px;
+    display: inline-block;
+    margin-right: 10px; /* Adjust the spacing */
+}
+
+.ijp-bar {
+    background-color: #ccc;
+    height: 8px; /* Adjust the height as needed */
+    border-radius: 4px;
+    margin-top: 5px; /* Adjust the spacing */
+    position: relative;
+}
+
+#ijp-fill-bar {
+    background-color: #007bff;
+    height: 100%;
+    width: 0; /* Initialize to 0%, it will be adjusted dynamically */
+    border-radius: 4px;
+    transition: width 0.5s; /* Add a smooth transition effect */
+}
+
+#ijp-target-amount {
+    font-weight: bold;
+}
+
+.ijp-location-bar{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-top: 10px;
+}
+.ijp-location{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.ijp-location p{
+    margin-bottom: 0px;
+    margin-left: 5px;
+}
+.ijp-jobType{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.ijp-jobType p{
+    margin-bottom: 0px;
+    margin-left: 5px;
+}
+.ijp-category{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.ijp-category p{
+    margin-bottom: 0px;
+    margin-left: 5px;
+}
+.ijp-desc-salary{
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f0f2f5;
+    width: 90%;
+    /* margin-left: 10px; */
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    height: 40%;
+    overflow-y: auto;
+}
+.ijp-candidates-button{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+.ijp-candidates-button button{
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 8px;
+    background-color: orangered;
+    color: white;
+}

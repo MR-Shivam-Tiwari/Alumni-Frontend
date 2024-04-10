@@ -1,0 +1,90 @@
+
+  
+  .post-card {
+    width: 100%; /* Adjust the maximum width as needed */
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 16px;
+    margin-top: 15px;
+    height: 105vh;
+    display: flex;
+    max-height: 105vh;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  
+  .post-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .post-header img {
+    border-radius: 50%;
+  }
+  
+  .post-caption {
+    margin: 10px 0;
+    font-weight: 500;
+  }
+  
+  .post-media {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .post-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 10px 0;
+  }
+  
+  .post-action {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  .post-comments {
+    margin: 10px 0;
+  }
+  
+  .comment {
+    margin: 8px 0;
+  }
+  
+  .comment p {
+    margin: 0;
+  }
+  
+  .comment-box {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    gap: 10px;
+  }
+  
+  .comment-box input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #e0e0e0;
+    border-radius: 18px !important;
+  }
+  
+  .comment-box button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    margin-left: 8px;
+    cursor: pointer;
+  }
+  
+  /* Additional styling for buttons, hover effects, etc., can be added as needed */
+  

@@ -1,0 +1,81 @@
+.job-post{
+    width: 45%;
+}
+
+.jobs-title {
+    background: linear-gradient(-45deg, #21b9f3 0%, #4c7faf 100%); /* Base blue color */
+
+    color: white; /* Text color for contrast */
+    padding: 10px 20px; /* Adjust padding as needed */
+    font-size: 24px; /* Adjust font size as needed */
+    font-weight: 200; /* Adjust font weight as needed */
+    height: 20vh;
+    position: relative;
+    /* Add any additional styling as desired */
+  }
+  /* Style the card containing the search box */
+  .jobs-search-box {
+    display: flex;
+    justify-content: center;
+    min-height: 20vh; 
+    position: relative;
+}
+
+.centered-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh; /* Use viewport height to center vertically */
+}
+
+  
+  .jobs-card {
+    width: 80%; /* Adjust the width as needed */
+     /* Add a maximum width to prevent it from getting too wide */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px; /* Add padding to the card content */
+    margin: 0 auto; /* Center the card horizontally */
+    background-color: white;
+    border-radius: 0 0 5px 5px; /* Rounded corners only at the bottom */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+
+.jobs-dropdowns {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px; 
+    align-items: center;
+    
+}
+
+.custom-dropdown .dropdown-toggle {
+    font-size: 15px;
+  }
+
+.jobs-dropdowns .dropdown {
+    flex: 1; 
+  
+}
+.scrollable-dropdown {
+    max-height: 200px; /* Set the maximum height to make it scrollable */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.jobs-dropdowns .btn-primary {
+    width: 100%; /* Set the button's width to 100% to match dropdowns */
+}
+
+.accordion card{
+    width: 0px;
+    height: 0px;
+}
+
+.accordion .card button{
+    padding: 5px;
+    border-radius: 10px;
+}

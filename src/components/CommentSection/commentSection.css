@@ -1,0 +1,106 @@
+.comment-box{
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+#textCommentSection {
+    padding: 0.3rem;
+    width: 100%;
+    background-color: #f0f0f0; /* Background color */
+    border-radius: 4px; /* Rounded corners */
+    border: 1px solid #ccc; /* Border */
+    height: 44px;
+  }
+  
+  #textCommentSection textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    resize: none; /* Prevent resizing */
+    outline: none; /* Remove focus border */
+  }
+  
+  #textCommentSection textarea:focus {
+    /* Add a box-shadow when the textarea is focused */
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Optionally, you can style the textarea placeholder text */
+  #textCommentSection textarea::placeholder {
+    color: #888; /* Placeholder text color */
+  }
+
+#submitCommentSection {
+  text-align: right;
+  padding: 0em 2em;
+  background-color: #174873;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  height: 40px;
+  font-size: small;
+  color: white;
+  margin-bottom: 20px;
+  margin-top: 15px;
+ 
+  }
+  
+  #submitCommentSection textarea {
+    flex-grow: 1; /* Allow textarea to grow horizontally */
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    resize: none; /* Prevent resizing */
+    outline: none; /* Remove focus border */
+  }
+  
+  #submitCommentSection button {
+    padding: 0.5rem 1rem; /* Padding for button */
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove button border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Add pointer cursor */
+    transition: background-color 0.2s ease; /* Smooth transition on hover */
+  
+    /* Hover state */
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+  
+  /* Optionally, you can style the button as a primary action button to make it stand out more */
+  #submitCommentSection button.primary {
+    background-color: #28a745; /* Primary button background color */
+  }
+  
+  /* Optionally, you can style the button as a secondary action button */
+  #submitCommentSection button.secondary {
+    background-color: #dc3545; /* Secondary button background color */
+  }
+  .comment-buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    border-radius: 25%;
+
+  }
+  .comment-buttons button{
+    border-radius: 10px;
+    font-size: 12px;
+    font-style: italic;
+    font-family: sans-serif;
+    margin: 10px 0px;
+    color: #174873;
+    border: #888 solid 1px;
+  }
+  .comment-list{
+    list-style-type: none;
+    
+  }
+  .reply-form textarea:hover{
+    border: none;
+
+}

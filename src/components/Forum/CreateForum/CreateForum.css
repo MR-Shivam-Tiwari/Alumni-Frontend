@@ -1,0 +1,28 @@
+.crt{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+   
+}
+.crt-forum{
+    width: 60%;
+   
+}
+.button1{
+     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3em;
+    
+}
+.button1 button{
+    width:6vw;
+    height: 5vh;
+    margin: 50px 0px;
+    border-radius: 5px;
+   background-color: #174873;
+   color: white;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+}

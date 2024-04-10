@@ -1,0 +1,27 @@
+.card{
+   
+    position: relative;
+}
+.card ul{
+    display: flex;
+    align-items: first baseline;
+    gap: 0.5em;
+    color: aliceblue;
+    margin: 0px;
+    padding: 0px 0px 0px 0px;
+    font-size: 16px;
+    font-style: bold;
+
+}
+.card button{
+   display: flex;
+   justify-content: center;
+   width: 5.5vw;
+   font-size: 12px;
+   background-color: #178ac2;
+   border: 0px;
+   padding: 0.5em;
+   color: aliceblue;
+   gap: 2%;
+   border-radius: 5px;
+}

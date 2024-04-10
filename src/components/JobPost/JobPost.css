@@ -1,0 +1,69 @@
+.job-pozt{
+    margin-top: 250px;
+    display: flex;
+    /* margin-left: 20px;
+    margin-right: 20px; */
+    position: relative;
+    margin-bottom: 20px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 5vw;
+    z-index: 1;
+    /* border: 1px solid #ccc; */
+    /* padding: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; */
+}
+
+.job-post-delete{
+    margin-top: 10px;
+}
+
+.job-post-delete button{
+    width: 100%;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: #5f92e3;
+    justify-content: center;
+    padding: 5px;
+    border: solid;
+}
+
+.donation-card{
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 16px;
+    background-color: #fff;
+    width: 34vw;
+    height: 60vh;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu{
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.menu:hover {
+    background-color: #ebeff5;
+    color: black;
+    
+  }
+
+  .menu li {
+    font-size: 15px;
+    font-weight: 400;
+  }
+  

@@ -1,0 +1,13 @@
+.selected-user{
+    background-color: blueviolet;
+}
+.myChat{
+    background-color: aqua;
+    color: white;
+    display: inline-block;
+}
+.yourChat{
+    background-color: white;
+    color: grey;
+    display: inline-block;
+}

@@ -1,0 +1,50 @@
+.PageSubTitle-header{
+    background-color: #fff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    border-radius: max(0px, min(8px, calc((100vw - 4px - 100%) * 9999))) / 8px;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 26px;
+    
+}
+.PageSubTitle-header li:last-child {
+    margin-left: auto;
+  }
+
+.PageSubTitle-header li:last-child button{
+    background-color: #174873;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-radius: 8px;
+    padding: 3px 10px;
+    font-size: 14px;
+    height: 32px;
+  }
+
+.active-link1 {
+    border-bottom: 3px solid #174873;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+
+.active-link2 {
+    border-bottom: 3px solid #174873;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+
+.active-link3 {
+    border-bottom: 3px solid #174873;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }

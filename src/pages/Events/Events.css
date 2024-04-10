@@ -1,0 +1,28 @@
+.Events{
+    text-align: center;
+    background-image: url(/src/images/pexels-tyler-lastovich-590179.jpg);
+    color: #4d63b2;
+    height: 92vh;
+    position: relative;
+    width: 60%;
+}
+.event-button-create{
+    margin-top: 0px;
+}
+
+.react-datepicker__input-container input{
+    padding: 0.5em;
+    border-radius: 10px;
+}
+
+.add-event-button {
+    position: fixed;
+    bottom: 60px; /* Adjust this value to control the vertical position */
+    right: 60px; /* Adjust this value to control the horizontal position */
+    padding: 10px 20px; /* Add padding for better visibility */
+  }
+
+.event-edit-delete{
+    display: flex;
+    gap: 20px;
+}
