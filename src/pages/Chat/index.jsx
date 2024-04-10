@@ -76,7 +76,7 @@ const Chat = () => {
   
   const connectToWs = () => {
     console.log('connecting')
-    const ws = new WebSocket('ws://localhost:5000');
+    const ws = new WebSocket('ws://alumni-backend-chi.vercel.app/');
     setWs(ws);
     ws.addEventListener('message', handleMessage);
   };

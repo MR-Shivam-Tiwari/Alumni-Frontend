@@ -2,7 +2,7 @@
   "name": "alumniui",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:5000",
+  "proxy": "http://alumni-backend-chi.vercel.app/",
   "homepage": ".",
   "dependencies": {
     "@ckeditor/ckeditor5-build-classic": "^40.1.0",
